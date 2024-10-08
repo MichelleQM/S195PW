@@ -23,7 +23,7 @@
             <a class="nav-link" aria-current="page" href="{{route('rutaformulario')}}">Registro clientes</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" href="{{route('rutaclientes')}}">Consultar Sclientes</a>
+            <a class="nav-link" href="{{route('rutaclientes')}}">Consultar clientes</a>
             </li>
         </ul>
         </div>
@@ -34,6 +34,7 @@
 
 @yield('contenido1'){{--Indica que ahi es en donde se va a colocar el contenido que se desea mostrarSS--}}
 @yield('contenido2')
+@yield('contenido')
 
 </body>
 </html>
