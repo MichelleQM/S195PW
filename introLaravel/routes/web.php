@@ -8,6 +8,8 @@ Route::get('/', [controladorVistas::class, 'home'])->name('rutainicio');
 Route::get('/formulario', [controladorVistas::class, 'formulario'])->name('rutaformulario');
 Route::get('/clientes', [controladorVistas::class, 'consulta'])->name('rutaclientes');
 
+Route :: post ('/enviar', [controladorVistas::class,'procesarClientes'])->name('procesarclientes');
+
 // Route::get('/', function () {
 //     return view('welcome');
 // });
