@@ -29,10 +29,10 @@ class controladorVistas extends Controller
         //return $peticion->path();
 
         //imprime la url completa de donde se hizo la peticion 
-        //return $peticion->url();
+        return $peticion->url();
 
         //muestra la ip origen de la peticion 
-        return $peticion->ip();
+        //return $peticion->ip();
 
     }
 }
