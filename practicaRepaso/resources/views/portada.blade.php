@@ -17,14 +17,17 @@
     </style>
 </head>
 <body>
-    <div style="display: flex; justify-content: center; aling-items: center; height: 100hv; text-aling:center;">
-        <div>
-            <h1 class="display-1">Practica de repaso Laravel</h1>
-            <h2>Convertidor</h2>
-            <p>Michelle Wendolyn Quintero Moreno</p>
-
-            <a href="/" class="btn btn-primary justify-content">Ir a convertidor</a>
-    </style>
+    <div class="card text-center full-height">
+    <center>
+            <img src="{{asset('imagenes/logo.png')}}" alt="Univerdad Politecnica Queretaro" style="max-width: 25%; height: auto;" class="card-img-top">
+    </center>
+    <div class="card-body">
+        <h5 class="card-title">Practica Repaso</h5>
+        <p class="card-text">Michelle Wendolyn Quintero Moreno</p>
+        <p class="card-text">Convertidor 16/10/2024</p>
+        <p class="card-text">Programacion web: Ivan Isay Guerra Lopez</p>
+        <a href="{{route('rutaconvertidor')}}" class="btn btn-primary">Convertidor</a>
+    </div>
     </div>
 </body>
 </html>
