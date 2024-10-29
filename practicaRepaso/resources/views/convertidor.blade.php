@@ -19,7 +19,7 @@
                 @csrf
                 <div class="form-group">
                     <label for="cantidad">Cantidad a convertir:</label>
-                    <input type="number" class="form-control" id="cantidad" name="cantidad">
+                    <input type="float" class="form-control" id="cantidad" name="cantidad">
                 </div>
                 <div class="form-group">
                     <label for="inicial">unidad conversion:</label>
