@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\controladorRepaso;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [controladorRepaso::class, 'inicio'])->name('rutainicio');
+Route::get('/registroLibros', [controladorRepaso::class, 'registro'])->name('rutaregistro');
