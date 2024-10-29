@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('titulo')</title>
     @vite(['resources/js/app.js'])
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 </head>
 <body>
@@ -20,10 +21,10 @@
         <ul class="navbar-nav">
 
             <li class="nav-item">
-            <a class="nav-link {{ request()->routeIs('rutaformulario')?'text-warning':''}}" aria-current="page" href="{{route('rutaformulario')}}">Registro clientes</a>
+            <a class="nav-link {{ request()->routeIs('rutaformulario')?'text-warning':''}}" aria-current="page" href="{{route('rutaformulario')}}">{{ __('Registro clientes')}}</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link {{ request()->routeIs('rutaclientes')?'text-primary':''}}" href="{{route('rutaclientes')}}">Consultar clientes</a>
+            <a class="nav-link {{ request()->routeIs('rutaclientes')?'text-primary':''}}" href="{{route('rutaclientes')}}">{{ __('Consultar clientes')}}</a>
             </li>
         </ul>
         </div>
