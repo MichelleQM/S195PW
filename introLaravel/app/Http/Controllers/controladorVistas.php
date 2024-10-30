@@ -27,16 +27,6 @@ class controladorVistas extends Controller
 
         return to_route('rutaformulario');
 
-
-
-
-
-
-
-
-
-
-
         //redireccion usando la ruta 
         //return redirect('/');
 

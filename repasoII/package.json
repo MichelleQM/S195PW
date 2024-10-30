@@ -16,6 +16,9 @@
     },
     "dependencies": {
         "@popperjs/core": "^2.11.8",
-        "bootstrap": "^5.3.3"
+        "alertifyjs": "^1.14.0",
+        "bootstrap": "^5.3.3",
+        "install": "^0.13.0",
+        "npm": "^10.9.0"
     }
 }
