@@ -6,15 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     @vite(['resources/js/app.js'])
-
-
 </head>
 <body>
-
+    @if (session('exito'))
+        <div class="alert alert-success">
+            {{ session('exito') }}
+        </div>
+    @endif
     <h1 class="text-center text-success mt-5 mb-4">Registro Frituras</h1>
-
     <div class="container col-md-5">
-    <form action="" method="POST">
+    <form action="/registro" method="POST">
         @csrf
 
         <div class="mb-3">
