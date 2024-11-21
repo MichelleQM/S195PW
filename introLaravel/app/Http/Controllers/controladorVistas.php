@@ -8,10 +8,6 @@ use App\Http\Requests\validadorCliente;
 
 class controladorVistas extends Controller
 {
-    public function home(){
-        return view('inicio');
-    }
-
     public function formulario(){
         return view('formulario');
     }

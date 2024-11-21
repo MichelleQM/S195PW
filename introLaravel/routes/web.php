@@ -2,22 +2,19 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\controladorVistas;
+use App\Http\Controllers\clienteControlador;
 
-//RUTAS PARA TRABAJAR CON CONTROLADOR 
-Route::get('/', [controladorVistas::class, 'home'])->name('rutainicio');
-Route::get('/formulario', [controladorVistas::class, 'formulario'])->name('rutaformulario');
-Route::get('/clientes', [controladorVistas::class, 'consulta'])->name('rutaclientes');
+//RUTAS PARA TRABAJAR CON CONTROALDOR CLIENTECONTROLADOR
+Route::get('/cliente/create',[clienteControlador::class, 'create'])->name('rutaformulario');
+Route::post('/cliente',[clienteControlador::class,'store'])->name('procesarclientes');
+Route::get('/clientes',[clienteControlador::class,'index'])->name('rutaclientes');
+Route::get('/',[clienteControlador::class,'home'])->name('rutainicio');
 
-Route :: post ('/enviar', [controladorVistas::class,'procesarClientes'])->name('procesarclientes');
+//RUTAS PARA UPDATE Y DELETE
+Route::get('/cliente/{id}/edit', [clienteControlador::class, 'edit'])->name('rutaeditar');
+Route::put('/cliente/{id}', [clienteControlador::class, 'update'])->name('rutaactualizar');
+Route::delete('/cliente/{id}', [clienteControlador::class, 'destroy'])->name('rutaeliminar');
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
 
-/* Route::view('/', 'inicio')->name('rutainicio');
-
-Route::view('/formulario', 'formulario')->name('rutaformulario');
-
-Route::view('/clientes', 'clientes')->name('rutaclientes');*/
 
 Route::view('/componentes', 'componentes')->name('rutacomponentes'); 

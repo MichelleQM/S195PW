@@ -30,7 +30,7 @@
     </div>
 
     <div class="card-body text-justify">
-        <form action="/enviar" method="POST">
+        <form action="/cliente" method="POST">
             @csrf
 
         <div class="mb-3">
@@ -53,7 +53,7 @@
 
         <div class="mb-3">
             <label for="telefono" class="form-label">{{ __('Telefono')}}</label>
-            <input type="text" class="form-control" name="txttelefono">
+            <input type="numeric" class="form-control" name="txttelefono">
             <small class="text-danger fst-italic">{{$errors->first('txttelefono')}}</small>
         </div>
     </div>
